@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FinMind Design System - All colors in HSL */
+
+@layer base {
+  :root {
+    /* FinMind Brand Colors */
+    --finmind-light: 165 100% 89%; /* #C7FFED */
+    --finmind-secondary: 124 100% 92%; /* #D8FFDB */
+    --finmind-primary: 178 100% 28%; /* #008F8C */
+    --finmind-dark: 180 97% 17%; /* #015958 */
+    --finmind-darker: 180 94% 11%; /* #023535 */
+    
+    /* Semantic tokens */
+    --background: 165 100% 89%; /* finmind-light */
+    --foreground: 180 94% 11%; /* finmind-darker */
+    
+    --card: 0 0% 100%;
+    --card-foreground: 180 94% 11%;
+    --card-secondary: 124 100% 92%; /* finmind-secondary */
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 180 94% 11%;
+    
+    --primary: 178 100% 28%; /* finmind-primary - CTA */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 124 100% 92%; /* finmind-secondary */
+    --secondary-foreground: 180 94% 11%;
+    
+    --muted: 165 100% 89%;
+    --muted-foreground: 180 60% 30%;
+    
+    --accent: 178 100% 28%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --border: 165 50% 80%;
+    --input: 165 50% 85%;
+    --ring: 178 100% 28%;
+    
+    --radius: 12px;
+    
+    /* Custom tokens */
+    --header-bg: 180 94% 11%; /* finmind-darker */
+    --header-fg: 0 0% 100%;
+    
+    --card-shadow: 0 6px 18px rgba(2, 53, 53, 0.08);
+    --card-hover-shadow: 0 8px 24px rgba(2, 53, 53, 0.12);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .dark {
+    --background: 180 94% 11%;
+    --foreground: 0 0% 100%;
+    
+    --card: 180 80% 15%;
+    --card-foreground: 0 0% 100%;
+    --card-secondary: 180 70% 18%;
+    
+    --popover: 180 80% 15%;
+    --popover-foreground: 0 0% 100%;
+    
+    --primary: 178 100% 35%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 180 70% 18%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 180 60% 20%;
+    --muted-foreground: 165 40% 70%;
+    
+    --accent: 178 100% 35%;
+    --accent-foreground: 0 0% 100%;
+    
+    --border: 180 40% 25%;
+    --input: 180 40% 25%;
+    --ring: 178 100% 35%;
+    
+    --header-bg: 180 90% 8%;
+    --header-fg: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  .finmind-card {
+    @apply rounded-[--radius] bg-card;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition-smooth);
+  }
+  
+  .finmind-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-hover-shadow);
+  }
+  
+  .finmind-container {
+    @apply mx-auto max-w-screen-xl px-4;
+  }
+  
+  .income-text {
+    @apply text-success;
+  }
+  
+  .expense-text {
+    @apply text-foreground;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.4s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
