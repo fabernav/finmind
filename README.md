@@ -1,73 +1,60 @@
-# Welcome to your Lovable project
+# 🧠 FinMind - Inteligência Financeira Pessoal
 
-## Project info
+> Uma plataforma de gestão financeira moderna que combina controle orçamentário intuitivo com insights gerados por Inteligência Artificial.
 
-**URL**: https://lovable.dev/projects/7951b519-8452-4737-9ff7-12b94c15f7be
+![FinMind Dashboard](public/dashboard.png)
 
-## How can I edit this code?
+## 📋 Sobre o Projeto
 
-There are several ways of editing your application.
+O **FinMind** nasceu da necessidade de ir além das planilhas tradicionais. Não é apenas um registrador de gastos, mas um assistente financeiro que utiliza a API do **Google Gemini AI** para analisar padrões de consumo e sugerir otimizações de orçamento em tempo real.
 
-**Use Lovable**
+O sistema conta com funcionalidades avançadas como o "Smart Invest", que permite destinar automaticamente uma porcentagem de novas receitas para metas prioritárias, gamificando o processo de poupança.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7951b519-8452-4737-9ff7-12b94c15f7be) and start prompting.
+## 🚀 Funcionalidades Principais
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Dashboard Interativo:** Visualização clara de saldo, despesas e comparativos mensais (MoM - Month over Month).
+- **Gestão de Transações:** Entradas e saídas categorizadas com suporte a datas retroativas.
+- **Metas Inteligentes:** Criação de objetivos financeiros com barras de progresso visual.
+- **Turbinar Meta (Smart Invest):** Slide deslizante para alocar automaticamente % de ganhos (5%, 10%, 20%...) diretamente para a meta principal.
+- **AI Financial Advisor:** Integração com **Google Gemini 1.5 Flash** para consultoria financeira personalizada baseada nos dados do usuário.
+- **Modo Offline/Local:** Arquitetura *Local-First* utilizando LocalStorage para persistência rápida e segura de dados.
 
-**Use your preferred IDE**
+## 🛠️ Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Este projeto foi desenvolvido utilizando as tecnologias mais modernas do ecossistema React:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Frontend:** React.js (Vite), TypeScript
+- **Estilização:** Tailwind CSS, Shadcn/ui
+- **Ícones:** Lucide React
+- **IA Generativa:** Google Generative AI SDK
+- **Gerenciamento de Estado:** React Hooks & Context
+- **Roteamento:** React Router Dom
 
-Follow these steps:
+## 📦 Como rodar localmente
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Clone o projeto e instale as dependências:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```bash
+# Clone o repositório
+git clone [https://github.com/SEU_USUARIO/finmind.git](https://github.com/SEU_USUARIO/finmind.git)
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Entre na pasta
+cd finmind
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Instale as dependências
+npm install
+
+# Configure as variáveis de ambiente
+# Crie um arquivo .env na raiz e adicione sua chave do Gemini:
+# VITE_GEMINI_KEY=Sua_Chave_Aqui
+
+# Rode o servidor de desenvolvimento
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
+📱 Layout Responsivo
+O projeto é totalmente adaptável para dispositivos móveis, contando com um menu de navegação exclusivo e componentes otimizados para touch.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/7951b519-8452-4737-9ff7-12b94c15f7be) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+🤝 Contato
+Desenvolvido por Fabricio Navarro Meira | https://www.linkedin.com/in/fabricio-navarro-meira-214735287/ | scroll.navas@gmail.com
