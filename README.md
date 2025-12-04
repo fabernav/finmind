@@ -2,7 +2,7 @@
 
 > Uma plataforma de gestão financeira moderna que combina controle orçamentário intuitivo com insights gerados por Inteligência Artificial.
 
-![FinMind Dashboard](public/dashboard.png)
+![FinMind Dashboard](public/dashboard.jpg)
 
 ## 📋 Sobre o Projeto
 
