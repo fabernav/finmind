@@ -30,6 +30,14 @@ Este projeto foi desenvolvido utilizando as tecnologias mais modernas do ecossis
 - **Gerenciamento de Estado:** React Hooks & Context
 - **Roteamento:** React Router Dom
 
+
+## 📱 Layout Responsivo
+O projeto é totalmente adaptável para dispositivos móveis, contando com um menu de navegação exclusivo e componentes otimizados para touch.
+
+## 🤝 Contato
+Desenvolvido por Fabricio Navarro Meira | https://www.linkedin.com/in/fabricio-navarro-meira-214735287/ | scroll.navas@gmail.com
+
+
 ## 📦 Como rodar localmente
 
 Clone o projeto e instale as dependências:
@@ -50,11 +58,3 @@ npm install
 
 # Rode o servidor de desenvolvimento
 npm run dev
-
-
-
-📱 Layout Responsivo
-O projeto é totalmente adaptável para dispositivos móveis, contando com um menu de navegação exclusivo e componentes otimizados para touch.
-
-🤝 Contato
-Desenvolvido por Fabricio Navarro Meira | https://www.linkedin.com/in/fabricio-navarro-meira-214735287/ | scroll.navas@gmail.com
